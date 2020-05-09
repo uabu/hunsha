@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>韩式婚纱</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+    <style>
+    #boxshadow img {
+    width :80%;
+    border:double #87cefa;
+    border-radius: 5px;
+}
+
+</style>
+<style type="text/css">
+/*页面样式初始化*/
+*{
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+/*通用样式*/
+body{
+    background-color: #ffffff;
+    font: 14px 微软雅黑, 黑体, Verdana, Arial, sans-serif;
+    color:#333333 ;
+    border-top: 8px solid #a78560;
+    }
+ul{
+    list-style-type: none;
+}
+/*外层盒子*/
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+/*头部*/
+.top-header{
+    margin: 10px 0;
+    height: 120px;
+}
+/*logo*/
+.tea-logo{
+    float: left;
+    height:100px;
+    width:100px;
+    overflow:hidden;
+    border-radius:50%;
+    box-shadow: 3px 3px #808080;
+}
+/*导航*/
+.top-menu{
+    float: left;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.top-menu ul li{
+    display: inline;
+    background-color: #fffaf0;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 25px;
+    box-shadow: 3px 3px #aaa;
+    transition: 1.5s;   
+}
+
+.top-menu ul li.selected, .top-menu ul li:hover{
+    background-color: #fffaf0; 
+}
+
+.top-menu ul li a:link, .top-menu ul li a:visited{
+    color:#ffa500;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*侧边栏*/
+.left-aside{
+    float: left;
+    width: 350px; 
+    border-style:double;
+    border:double #fff0f5;
+    border-radius: 25px;
+    box-shadow: 3px 10px #aaa;
+    transition: 1.5s; 
+    text-indent:26px;
+    line-height:180%;
+    letter-spacing:0.5px;
+}
+.left-aside h3{
+    color: #e9967a;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;  
+    text-shadow:2px 2px #808080;
+}
+
+.left-aside section{
+    background:#fff0f5 url(images/ti.jpg) top left;
+     border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+/*主内容区域*/
+main{
+    background:rgba(224,255,255,0.5) url(images/ti.jpg) top right;
+    background-size:600px 1500px;
+    background-repeat:no-repeat; 
+    padding: 20px;
+    margin-left: 360px;
+    border-style:inset;
+    border:double #ffe4e1;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #AAA; 
+    line-height:170%;
+    letter-spacing:0.5px;
+}
+
+h3{
+    color: #e9967a;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;  
+    text-shadow:2px 2px #808080;
+}
+.main article{
+    border-bottom: 1px dashed #111111;
+    margin-bottom: 10px;
+    padding-bottom: 10px;text-indent:26px;
+}
+*页脚*/
+.page-footer{
+    width:100%;height:40px;clear: both;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #4F3115;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 90%;
+}
+</style>
+</head>
+<body>
+    <div id ="layer9" style="position:absolute;
+width:100%; height:100%; z-index:-1">
+     <canvas></canvas>
+    </div>
+    <div class="wrap">
+    	<header class="top-header">
+        	<img class="tea-logo" src="images/logo.jpg" alt="婚纱">
+            <nav class="top-menu">
+            	<ul>
+            		<li class="selected"><a href="index.html" title="婚纱">主页</a></li>
+            		<li><a href="zhongshi.html" title="中式婚纱">中式婚纱</a></li>
+            		<li><a href="xiaoliu.html" title="韩式婚纱">韩式婚纱</a></li>
+            		<li><a href="oumei.html" title="">欧式婚纱</a></li>
+            	</ul>
+            </nav>
+        </header>
+         <aside class="left-aside">
+           
+        	<section class="news">
+            	<header>
+                	<h3>韩式婚纱</h3>
+                </header>
+                <p>
+               婚纱简洁的款式，面料垂感要好！，并且裙摆表层覆有一层薄纱，这样可令新娘显得更加轻盈柔美。当然布料款式多样，突出每件礼服的与众不同。 　
+                </p>
+            </section>
+            <section class="teas">
+            	<header>
+                	<h3>风格展示</h3>
+                </header>
+                <div id="boxshadow">
+                <figure>
+                	<img src="images/hs6.jpg" width=180px height=180px alt="高调的写意">
+                	<figcaption>高调写意风格</figcaption>
+                    
+                </figure>
+                
+                <figure  class="figure-r">
+                	<img src="images/hs3.jpg" width=180px height=180px alt="经典的传统">
+                	<figcaption>经典传统风格</figcaption>
+                </figure>
+                <figure>
+                	<img src="images/hs1.jpg" width=180px height=180px alt="时尚与复古">
+                	<figcaption>时尚复古风格</figcaption>
+                </figure>
+                  <figure  class="figure-r">
+                	<img src="images/hs2.jpg" width=180px height=180px alt="淡雅的唯美">
+                	<figcaption>淡雅唯美风格</figcaption>
+                </figure>
+                </div>
+                <div class="clear"></div>
+                
+            </section>
+        </aside>
+        <main> 
+        <article>
+                <header>
+                    <h3>韩式婚纱</h3>
+                    
+                </header>
+                <p style="text-indent:26px">
+            婚纱的意义是对幸福的传承与情感的交融，因为每位新娘背后都有着动人述说的故事。设计穿着舒适，款式经得起考验的婚纱是对极致之美的解读，真正的奢华需要用心造就。
+                </p>
+                <figure style="text-indent:26px">
+                <div id="boxshadow">
+                    <video controls width="512" height="288">
+                        <source src="hs.mp4">
+                        <p>对不起，您的浏览器不支持video标签</p>
+                    </video>
+                    </div>
+                </figure>
+                <footer>
+                <figcaption>视频《韩式婚纱》</figcaption>
+                    <span></span>
+                </footer>
+            </article>
+            <br/>
+            <hr/>
+        		<header>
+        			<h3>高调写意风格</h3>
+        			<time datetime="2020-03-25"></time>
+        		</header>
+                <br/>
+        		<p style="text-indent:26px">
+        		风格特色：高调、写意、浪漫，让观者从画面中感受到情绪的延展和愉悦的美感。温婉而典雅的韩系蕾丝主纱，将手工钉珠跳跃在灵动轻盈的网纱之上。收腰礼服裙凸显好身材，增加了气质，仙气十足。
+                </p><br/>
+                
+        		<footer>
+                
+                </footer>
+        	</article>
+            <hr/>
+        	<article>
+        		<header>
+        			<h3>经典传统风格</h3>
+        			<time datetime="2020-03-25"></time>
+        		</header>
+                <br/>
+        		<p style="text-indent:26px">
+                 风格特色：精致手工钉珠点缀配以亲肤面料，舒适迷人。布光比较复杂，强调用光线塑造人物的立体感。造型和场景都很简洁。流畅的剪裁打造曼妙的身材，将高贵优雅发挥到极致。营造简约的极致氛围。
+                </p><br/>
+        		<footer>
+                	
+                </footer>
+        	</article>
+            <hr/>
+        	<article>
+        		<header>
+        			<h3>时尚复古风格</h3>
+        			<time datetime="2020-03-25"></time>
+        		</header>
+                <br/>
+        		<p style="text-indent:26px">
+                风格特色：素净纯粹的缎面和轻纱结合，恰如新娘本身的气质，恬静中带着几分优雅大方。融合俏皮的怀旧元素，溢出满满的情怀，充分彰显个性。大胆的尝试反差，将多种看似迥异的风格融合到一起。
+                </p><br/>
+        		<footer>
+                	
+                </footer>
+        	</article>
+            <hr/>
+        	<article>
+        		<header>
+        			<h3>淡雅唯美风格</h3>
+        			<time datetime="2020-03-25"></time>
+        		</header>
+                <br/>
+        		<p style="text-indent:26px">
+                风格特色：不规则剪裁的牛奶缎面料可盐可甜，仿佛心中的“白月光”婚纱。轻薄如丝的质感，穿上它就像穿梭在森林中的精灵。以淡雅的色调为主，表现优雅、纯情和甜美的感觉。
+                </p><br/>
+        		<footer>
+                	
+                </footer>
+        	</article>
+        </main>
+    </div> 
+    <footer class="page-footer">
+    	@2020 婚纱 
+    </footer>
+</body>
+</html>

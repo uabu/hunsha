@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>婚纱文化</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+    <style>
+    #boxshadow img {
+    width :80%;
+    border:double #ffe4e1;
+    border-radius: 5px;
+}
+.red {border:1px solid #ffc30d;}
+        .red-filled {background:#e0604a;border:1px solid #ffc30d;}
+        .blue {background:#67BCCF;}
+
+        .section {width:550px;border-radius:10px; margin:10px auto;}
+        .section p{text-align:center;margin:0px;padding:20px;font:16px sans-serif;line-height:140%;}
+        .section p strong {color:gold;}
+
+        .section-list {width:800px;border-radius:10px;margin:50px auto;}
+
+        .address{margin:0px auto 50px auto;padding:0px;width:500px;text-align:center;}
+        .address, .address a{font:16px arial, sans-serif;color:black;}
+
+</style>
+<style type="text/css">
+/*页面样式初始化*/
+*{
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+/*通用样式*/
+body{
+    font: 14px 微软雅黑, 黑体, Verdana, Arial, sans-serif;
+    color:#333333 ;
+    border-top: 8px solid #ffe4b5;
+    }
+
+ul{
+    list-style-type: none;
+}
+/*外层盒子*/
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+/*头部*/
+.top-header{
+    margin: 10px 0;
+    height: 120px;
+}
+/*logo*/
+.tea-logo{
+    float: left;
+    height:100px;
+    width:100px;
+    overflow:hidden;
+    border-radius:50%;
+    box-shadow: 3px 3px #808080;
+}
+/*导航*/
+.top-menu{
+    float: left;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.top-menu ul li{
+    display: inline;
+    background-color: #fffaf0;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 25px;
+    box-shadow: 3px 3px #aaa;
+    transition: 1.5s;   
+}
+
+.top-menu ul li.selected, .top-menu ul li:hover{
+    background-color: #fffaf0; 
+}
+
+.top-menu ul li a:link, .top-menu ul li a:visited{
+    color:#ffa500;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*侧边栏*/
+.left-aside{
+    float: left;
+    width: 350px; 
+    border-style:double;
+    border:double #ffe4e1;
+    border-radius: 25px;
+    box-shadow: 3px 10px #aaa;
+    transition: 1.5s; 
+    text-indent:26px;
+    line-height:180%;
+    letter-spacing:0.5px;
+}
+.left-aside h3{
+    color: #e9967a;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;  
+    text-shadow:2px 2px #808080;
+}
+
+.left-aside section{
+    background:#fff0f5 url(images/ti.jpg) top left;
+    background-size:350px 1500px;
+    background-repeat:no-repeat;        
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+/*主内容区域*/
+main{
+    background:#fff0f5 url(images/ti.jpg) top right;
+    background-size:600px 1500px;
+    background-repeat:no-repeat;  
+    padding: 20px;
+    margin-left: 360px;
+    border-style:inset;
+    border:double #ffe4e1;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #AAA; 
+    line-height:170%;
+    letter-spacing:0.5px;
+}
+
+h3{
+    color: #e9967a;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;  
+    text-shadow:2px 2px #808080;
+}
+.main article{
+    border-bottom: 1px dashed #111111;
+    margin-bottom: 10px;
+    padding-bottom: 10px;text-indent:26px;
+}
+*页脚*/
+.page-footer{
+    width:100%;height:40px;clear: both;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #4F3115;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 90%;
+}
+</style>
+</head>
+<body>
+     <div id ="layer9" style="position:absolute;
+width:100%; height:100%; z-index:-1">
+<canvas></canvas>
+</div>
+    <div class="wrap">
+        <header class="top-header">
+            <img class="tea-logo" src="images/logo.jpg" alt="春暖花开,英雄归来,向最美逆行者致敬! ">
+            <nav class="top-menu">
+                <ul>
+                    <li class="selected"><a href="index.html" title="最美逆行者">主页</a></li>
+                    <li><a href="zhongshi.html" title="最美的歌">中式婚纱</a></li>
+                    <li><a href="xiaoliu.html" title="等你凯旋">韩式婚纱</a></li>
+                    <li><a href="oumei.html" title="英雄回家">欧式婚纱</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="left-aside">
+            <section class="news">
+             <figure>
+                <div id="boxshadow">
+                    <video controls width="250" height="200" style="text-align: center">
+                        <source src="oumei.mkv">
+                        <p>对不起，您的浏览器不支持video标签</p>
+                    </video>
+                    </div>
+                </figure>
+                <footer>
+                <figcaption>视频《婚纱mv》</figcaption>
+                    <span>阅读(99)</span>
+                </footer>
+                <header>
+                    <h3>欧式婚纱简介</h3>
+                </header>
+                <p>
+               欧式婚纱又叫宫廷婚纱，他是模仿欧洲中世纪贵族的一种婚纱。欧式结婚吸引了不少新人的眼球。越来越多的年轻人都想在这找回曾经那个梦想，筑起幸福的爱墙。耀眼的宫殿厅堂，华丽的结婚礼服，幸福的相拥，仿佛徜徉在蓝色的海洋之中。复古风盛行下，欧式结婚照几乎穷尽了奢华的招数让新娘成为婚礼上不败的焦点。经典的婚纱摄影风格是造就美好回忆的开始，欧式结婚照的皇家风格婚纱摄影更是展现出绝对的高贵品味。他不仅真实记录着年轻人对高贵皇室生活的一种向往，也寓意对婚后美好生活的激励和憧憬。
+                </p>
+                 <p>
+               过于复杂的制作工艺和装饰往往画蛇添足，将观者的注意力吸引到婚纱的细节上而忽略了着婚纱的女主人的美丽。 特别是那些整个裙摆都堆缀满了大花的婚纱让目光不知何去何从。因此欧美婚纱倡导简洁、大方的款式。当然，适当的珠绣、蕾丝、蝴蝶结、丝带也是婚纱必不可少的点睛之笔。就好像某品牌服装的广告词：简约而不简单。  
+                </p>
+                <p>欧式婚纱照度过了前些年的火爆，很多新人认为欧式婚纱照风格已经过时了，其实经过许多北京婚纱摄影工作室的改进创新，如今的欧式婚纱照图片也成为了创意时尚婚纱照的一种，例如欧式宫廷风格婚纱照和欧式唯美系列，比起韩式婚纱照更有一种贵族的气质，这里天空摄影通过欧式婚纱照片欣赏，让大家对于这种内景婚纱照有一个全面的认识。 </p>
+                <p>浪漫的欧式婚纱照总能给人一种无穷的回味，充满韵味。所以欧式风格的摄影也是广受消费者青睐的。富贵、奢华的欧式风格，让你变得更加迷人。</p><br/><br/>
+            </section>
+        </aside>
+        <main>
+            <article>
+                <header>
+                    <h3 align="center">欧式婚纱类型</h3>
+                </header>
+             <p style="text-indent:26px">
+
+        <div class="section red">
+            <div style="padding:10px;">
+                <div id="photobook" style="height:10px;"></div> 
+            </div>
+        </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/jquery.onebook3d-2.3.0-full-min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+            var src1 = [
+                'ga02/09.jpg', 
+                'ga02/08.jpg', 'ga02/07.jpg',
+                'ga02/06.jpg', 'ga02/05.jpg',
+                'ga02/10.jpg', 'ga02/11.jpg',
+                'ga02/12.jpg', 'ga02/04.jpg',
+                'ga02/03.jpg', 'ga02/02.jpg',
+                'ga02/01.jpg'
+                ];  
+            
+            var src3 = [
+                ['ga04/001.jpg','Title 1'], 
+                ['ga04/002.jpg','Title 2'], ['ga04/003.jpg','Title 3'],
+                ['ga04/004.jpg','Title 4'], ['ga04/005.jpg','Title 5'],
+                ['ga04/006.jpg','Title 6'], ['ga04/007.jpg','Title 7'],
+                ['ga04/008.jpg','Title 8'], ['ga04/009.jpg','Title 9'],
+                ['ga04/010.jpg','TItle 10']
+                ];  
+                
+                
+            var src4 = [
+                'ga04/001.jpg', 
+                'ga04/002.jpg', 'ga04/003.jpg',
+                'ga04/004.jpg', 'ga04/005.jpg',
+                'ga04/006.jpg', 'ga04/007.jpg',
+                'ga04/008.jpg', 'ga04/009.jpg',
+                'ga04/010.jpg'
+                ];  
+            
+            $('#photobook').onebook(src1,{skin:['light','dark'], bgDark:'#56998c url(./i/bg.jpg)',bgLight:'#d97f6f url(./i/bg2.jpg)', border:0, cesh:false});
+                
+            
+            $('.links a:eq(0)').click(function(){
+                 $.onebook(src4,{language:'it'});
+                 return false;
+            });
+            
+            
+            $('.links a:eq(1)').click(function(){
+                 $.onebook(src4,{border:100, skin:'light', pageColor:'#60baaa', bgLight:'#56998c url(./i/bg.jpg)', cesh:false});
+                 return false;
+            }); 
+
+            $('.links a:eq(2)').click(function(){
+                 $.onebook(src3,{slope:1, skin:'dark', startPage:4, border:10, flip:'basic', cesh:false});
+                 return false;
+            }); 
+            
+
+        });
+    </script>
+             </p>
+            <article>
+                <header>
+                    <h3>性感的短款婚纱</h3>
+                    <time datetime="2020-03-25">2020年3月25日</time>
+                </header>
+
+                <p style="text-indent:26px">
+                好像我们平常看到的大部分婚纱礼服几乎都是长款的、拖地的婚纱礼服，很少有短款的婚纱礼服。但是在今年，短款的婚纱礼服已经开始逐渐的流行起来，看多了长款，突然出现精致俏皮的、能够秀出新娘大长腿的短款婚纱，立马就给人一种眼前一亮的感觉。
+                </p>
+                <footer>
+                    <span>阅读(99)</span>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>童话鱼尾裙婚纱</h3>
+                    <time datetime="2020-03-25">2020年03月25日</time>
+                </header>
+                <p style="text-indent:26px">
+                 鱼尾裙婚纱一直都是新娘的宠儿，因为它可以呈现出新娘完美的身材曲线，旖旎而婉约，无意间流露的妩媚风情让人过目难忘。但是这款婚纱需要身材姣好的新娘才比较适合，太丰满或者纤细的新娘不建议选择这款。
+                </p>
+                <footer>
+                    <span>阅读(99)</span>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>唯美浪漫款婚纱</h3>
+                    <time datetime="2020-03-25">2020年03月25日</time>
+                </header>
+                <p style="text-indent:26px">
+                这款婚纱适合人文气息浓厚或者小清新的新娘，飘逸的长头纱、镂空的蕾丝花边以及缀有小碎花的透明褶皱，具有层次感的宽松裙摆，新娘穿上后营造出自然又浪漫的风格，这是浪漫型婚纱的最完美体现。
+                </p>
+                <footer>
+                    <span>阅读(99)</span>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>高贵华丽型婚纱</h3>
+                    <time datetime="2020-03-25">2020年03月25日</time>
+                </header>
+                <p style="text-indent:26px">
+                这款类型的婚纱是参照法国宫廷式的礼服改编而成的，在保留了原型的情况下又结合了现代化的手艺，适合大家闺秀气质的女孩，高贵华丽的风格让人眼前一亮，繁杂的手工缝制加上精致的手工绣花，彰显出高贵的气质
+                </p>
+                <footer>
+                    <span>阅读(99)</span>
+                </footer>
+            </article>
+              <article>
+                <header>
+                    <h3>复古风尚款婚纱</h3>
+                    <time datetime="2020-03-25">2020年3月25日</time>
+                </header>
+
+                <p style="text-indent:26px">
+                随着复古风的潮流袭来，复古型婚纱一下就成了新娘们的最爱，轻巧又华丽的蓬松裙婚纱有着浓重的古宫廷色彩，充满了复古风情。轻盈的绸带与蕾丝花边，加上流动的衣褶，将宫廷服饰的奢侈华美与现代多元的时尚元素相结合，就像宫廷里美丽高贵的公主。
+                </p>
+                <footer>
+                    <span>阅读(99)</span>
+                </footer>
+            </article>
+        </main>
+    </div> 
+    <footer class="page-footer">
+       
+    </footer>
+</body>
+</html>

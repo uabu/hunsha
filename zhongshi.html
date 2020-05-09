@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>中式婚纱</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+    <style>
+    #boxshadow img {
+    width :80%;
+    border:double #87cefa;
+    border-radius: 5px;
+}
+
+</style>
+<style type="text/css">
+	*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+.fold_wrap{width:100%;height:235px;margin:10px auto 0 auto;overflow:hidden;}
+.fold_wrap li{float:left;width:25%;height:540px;position:relative;overflow:hidden;cursor:pointer;}
+.fold_wrap li .mask_b{position:absolute;overflow:hidden;width:100%;height:100%;right:0px;top:0px; text-align:right;background:rgba(0,0,0,.3);_background:
+#E6E6FA;}
+.fold_wrap li.active .mask_b{background:none;}
+.fold_wrap li .mask_b h4{color:#fff;width:100%;margin:0 auto;display:block;font:30px/30px Microsoft Yahei;position:relative; right:40px; padding-top:30px;}
+.fold_wrap li.big{width:875px;}
+.i_how_n1{ top:370px;}
+.pic_auto{width:100%;height:100%;}
+/*页面样式初始化*/
+*{
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+/*通用样式*/
+body{
+    background-color: #ffffff;
+    font: 14px 微软雅黑, 黑体, Verdana, Arial, sans-serif;
+    color:#333333 ;
+    border-top: 8px solid #a78560;
+    }
+ul{
+    list-style-type: none;
+}
+/*外层盒子*/
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+/*头部*/
+.top-header{
+    margin: 10px 0;
+    height: 120px;
+}
+/*logo*/
+.tea-logo{
+    float: left;
+    height:100px;
+    width:100px;
+    overflow:hidden;
+    border-radius:50%;
+    box-shadow: 3px 3px #808080;
+}
+/*导航*/
+.top-menu{
+    float: left;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.top-menu ul li{
+    display: inline;
+    background-color: #fffaf0;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 25px;
+    box-shadow: 3px 3px #aaa;
+    transition: 1.5s;   
+}
+
+.top-menu ul li.selected, .top-menu ul li:hover{
+    background-color: #fffaf0; 
+}
+
+.top-menu ul li a:link, .top-menu ul li a:visited{
+    color:#ffa500;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*侧边栏*/
+.left-aside{
+    float: left;
+    width: 350px; 
+    border-style:double;
+    border:double #fff0f5;
+    border-radius: 25px;
+    box-shadow: 3px 10px #aaa;
+    transition: 1.5s; 
+    text-indent:26px;
+    line-height:180%;
+    letter-spacing:0.5px;
+}
+.left-aside h3{
+    color: #e9967a;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;  
+    text-shadow:2px 2px #808080;
+}
+
+.left-aside section{
+    background:#fff0f5 url(images/ti.jpg) top left;
+     border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+/*主内容区域*/
+main{
+    background:rgba(224,255,255,0.5) url(images/ti.jpg) top right;
+    background-size:600px 2500px;
+    background-repeat:no-repeat; 
+    padding: 20px;
+    margin-left: 360px;
+    border-style:inset;
+    border:double #ffe4e1;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #AAA; 
+    line-height:170%;
+    letter-spacing:0.5px;
+}
+
+h3{
+    color: #e9967a;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;  
+    text-shadow:2px 2px #808080;
+}
+.main article{
+    border-bottom: 1px dashed #111111;
+    margin-bottom: 10px;
+    padding-bottom: 10px;text-indent:26px;
+}
+*页脚*/
+.page-footer{
+    width:100%;height:40px;clear: both;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #4F3115;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 90%;
+}
+</style>
+</head>
+<body>
+<div id="Layer0" style="position:absolute; width:100%; height:100%; z-index:-1">    
+        <img src="image/OIP.jpg" height=2800px； width="100%"/>    
+</div><!--背景图片overflow:auto;-->
+
+    <div  id="layer1" style="background-color:rgba(224,255,255,0.20);width:1100px;height:700px;margin:4px auto;">
+
+<div class="wrap">
+  <header class="top-header">
+        	<img class="tea-logo" src="images/logo.jpg" alt="婚纱">
+            <nav class="top-menu">
+            	<ul>
+            		<li class="selected"><a href="index.html" title="婚纱">主页</a></li>
+            		<li><a href="zhongshi.html" title="中式婚纱">中式婚纱</a></li>
+            		<li><a href="xiaoliu.html" title="韩式婚纱">韩式婚纱</a></li>
+            		<li><a href="oumei.html" title="欧式婚纱">欧式婚纱</a></li>
+            	</ul>
+            </nav>
+        </header>
+		<script src="/demos/googlegg.js"></script>
+
+<ul class="fold_wrap" id="sm">
+	
+	<li>
+		<a href="#">
+				<div class="mask_b"><h4 class="i_how_n1"></h4></div>
+			<div class="pic_auto" style="background:url(images/i_how_01.jpg) no-repeat center 0;width: 360px;height: 230px"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#">
+			<div class="mask_b"><h4 class="i_how_n1"></h4></div>
+			<div class="pic_auto" style="background:url(images/i_how_02.jpg) no-repeat center 0;width: 360px;height: 230px"></div>
+		</a>
+	</li>
+		<li>
+		<a href="#">
+			<div class="mask_b"><h4 class="i_how_n1"></h4></div>
+			<div class="pic_auto" style="background:url(images/i_how_03.jpg) no-repeat center 0;width: 360px;height: 230px"></div>
+		</a>
+	</li>
+
+</ul>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+(function(){
+       
+var slideMenu=function(){
+  var sp,st,t,m,sa,l,w,gw,ot;
+  return{
+    destruct:function(){
+        if(m){
+          clearInterval(m.htimer);
+          clearInterval(m.timer);
+        }
+    },
+    build:function(sm,sw,mt,s,sl,h){
+      sp=s; 
+      st=sw; 
+      t=mt;
+      m=document.getElementById(sm);
+      sa=m.getElementsByTagName('li');
+      l=sa.length; 
+      w=m.offsetWidth; 
+      gw=w/l;
+      ot=Math.floor((w-st)/(l-1)); 
+      var i=0;
+      for(i;i<l;i++){
+        s=sa[i]; 
+        s.style.width=gw+'px'; 
+        this.timer(s)
+      }
+      if(sl!=null){
+        m.timer=setInterval(function(){
+          slideMenu.slide(sa[sl-1])
+        },t)}
+    },
+    timer:function(s){
+      s.onmouseover=function(){
+        clearInterval(m.htimer);
+        clearInterval(m.timer);
+        m.timer = setInterval(function(){
+          slideMenu.slide(s)
+        },t);
+        //console.log($(this).find('.mask_b').html());
+        $(this).find('.mask_b').hide();
+        //console.log($(this).find('.mask_b').attr("style"));
+    }
+      s.onmouseout=function(){
+        clearInterval(m.timer);
+        clearInterval(m.htimer);
+        m.htimer=setInterval(function(){
+          slideMenu.slide(s,true)
+        },t);
+        //console.log($(this).find('.mask_b').html());
+       $(this).find('.mask_b').show();
+       //console.log($(this).find('.mask_b').attr("style"));
+     }
+    },
+    slide:function(s,c){
+      var cw=parseInt(s.style.width);
+      if((cw<st && !c) || (cw>gw && c)){
+        var owt=0; var i=0;
+        for(i;i<l;i++){
+          if(sa[i]!=s){
+            var o,ow; var oi=0; o=sa[i]; ow=parseInt(o.style.width);
+            if(ow<gw && c){
+              oi=Math.floor((gw-ow)/sp); 
+              oi=(oi>0)?oi:1; 
+              o.style.width=(ow+oi)+'px';
+              //console.log(o);
+            //console.log(o.style.width);
+            }else if(ow>ot && !c){
+              oi=Math.floor((ow-ot)/sp); 
+              oi=(oi>0)?oi:1; 
+              o.style.width=(ow-oi)+'px';
+              //console.log(o);
+              //console.log(o.style.width);
+            }
+            if(c){
+              owt=owt+(ow+oi)
+            }else{
+              owt=owt+(ow-oi)
+            }
+          }
+        }
+        s.style.width=(w-owt)+'px';
+      }else{
+        if(m.htimer)
+          clearInterval(m.htimer)
+        if(m.timer)
+          clearInterval(m.timer);
+      }
+    }
+  };
+}();
+slideMenu.build('sm',175,1,1,1);
+})();
+</script>
+         <aside class="left-aside">
+           
+        	<section class="news">
+            	<header>
+                	<h3>中式婚纱</h3>
+                </header>
+                <p>
+               中国风的回潮顺带着中式婚纱的爆火了。现在不管是明星的婚礼上还是我们日常生活中的婚礼上大多数都是采用中式婚礼。新娘身穿"凤冠霞披",新浪身穿"状元服".不仅传承了中国传统文化也传承中国传统习俗。下面一起了解下中式婚纱吧。 　
+                </p>
+            </section>
+            <section class="teas">
+            	<header>
+                	<h3>风格展示</h3>
+                </header>
+                <div id="boxshadow">
+                <figure>
+                	<img src="image/xiuhe1.jpg" width=180px height=360px alt="秀禾服">
+                	<figcaption>秀禾服</figcaption>
+                    
+                </figure>
+                
+                <figure  class="figure-r">
+                	<img src="image/longfeng1.jpg"width=180px height=360px alt="龙凤褂">
+                	<figcaption>龙凤褂</figcaption>
+                </figure>
+                <figure>
+                	<img src="image/zhongxihebi1.jpg" width=180px height=360px alt="中西合璧">
+                	<figcaption>中西合璧</figcaption>
+                </figure>
+                  <figure  class="figure-r">
+                	<img src="image/gongbihua1.jpg" width=180px height=360px alt="工笔画">
+                	<figcaption>工笔画</figcaption>
+                </figure>
+					   <figure  class="figure-r">
+                	<img src="image/geming1.jpg" width=180px height=360px alt="革命风">
+                	<figcaption>革命风</figcaption>
+                </figure>
+                </div>
+                <div class="clear"></div>
+                
+            </section>
+        </aside>
+        <main> 
+        <article>
+             
+        		<header>
+        			<h3>中式婚纱之秀禾服</h3>
+        			<time datetime="2020-03-25"></time>
+        		</header>
+                <br/>
+        		<p style="text-indent:26px">
+        	由于2001年电视剧《橘子红了》的走红，（图一）剧中女主角秀禾所穿服装被一些人称为“秀禾服”。其实它只是由影视剧的服装师所打造出来的清末民初的女子婚服。秀禾服的“褂”的常规设计就是对襟或者右衽大襟袄褂，领子一般采用圆领与立领的设计，“裙”是根据明朝马面而改造演变过来的。秀禾服并不是中国传统婚服。现实生活中，秀禾服简化为新娘子穿大红裙褂，长辈如果要穿裙褂，会选较为成熟的枣红色、紫红色。裙褂的档次则按照各人经济条件来选择。
+如果在婚礼上新娘穿秀禾服，新郎总不能穿西装，但穿长衫马褂又太夸张。中山装改良而成的上衣，相近的暗花和刺绣，和新娘的裙褂“天生一对”。
+                </p>	  <br/><p style="text-indent:26px">
+        	秀禾服的“褂”是指上身的对襟衣，“裙”则是下身长裙。随着时代改变，裙褂的款式也有不少变化。
+上个世纪七十年代以前，裙褂是“黑褂红裙”，之后演变为“红褂红裙”。以前的褂是唐装剪裁，直膊、衫身阔大、扣花钮，现在流行的款式，已经改良为西装膊、修腰、中袖、拉链设计，变得更时尚及舒适。中袖的设计，除了突出新娘子的体态美外，也为了可以看到新娘子所佩戴的手链、手镯等金器饰物，表示对亲友们送的礼物的感谢。
+                </p><br/>
+                
+        		<footer>
+                
+                </footer>
+        	</article>
+            <hr/>
+        	<article>
+        		<header>
+        			<h3>中式婚纱之龙凤褂</h3>
+        			<time datetime="2020-03-25"></time>
+        		</header>
+                <br/>
+        		<p style="text-indent:26px">
+                龙凤褂的最大特点就是纯手工一针一线制作出来的。每一件的龙凤褂都离不开绣娘们的付出，她们巧妙而娴熟的手艺使一根根金银线汇聚成活灵活现、栩栩如生的图案。采用卜心绣的粤绣工艺制作出的图案是许多秀禾服比不上的。
+                </p><br/><br/><p style="text-indent:26px">
+        	凤褂裙又称裙褂，根据明代万历陵墓出土文物，这种对襟立领马面裙形式的衣服在明代已经是一种礼服。
+裙褂每一件均是纯手工一针一针缝制的衣服，绝不可分工合作，虽然这样要耗费大量的人力，但却是难得的纪念品，无论岁月变迁，星转物移，都不会丧失其独特的魅力，让人怀念那一份两人之间的悠悠之情。
+褂裙这个词中，“褂”指上衣，“裙”指下裳，近现代流行的款式，是经历了许多年的演变，变得更时尚及舒适。
+                </p><br/>
+        		<footer>
+                	
+                </footer>
+        	</article>
+            <hr/>
+        	<article>
+        		<header>
+        			<h3>中西合璧风格</h3>
+        			<time datetime="2020-03-25"></time>
+        		</header>
+                <br/>
+        		<p style="text-indent:26px">
+             中西合璧风格的中式婚纱照在对比中会给人一种强烈的视觉冲突感，中西合璧的碰撞中画面充满丰富性的同时又不失创意，新娘可以身穿一套传统的中式袖和服或者旗袍，而新郎则可以穿一件白衬衫加领带，背景也可以选择简单的红色背景，再加上一些比如气球之类的小道具，整个画面会非常的和谐而且充满中
+                </p><br/>
+				<br/><p style="text-indent:26px">
+        	‘80后’喜欢西方婚礼的纯白，长辈喜欢传统的大红，调和的结果，往往就是以位于纯白和大红之间的粉红色系为主色调”，唐铭说，“另外，对‘80后’钟情的西式宣誓、切蛋糕、开香槟等，长辈一般还能接受，跪拜老人的中式婚礼套路‘80后’也能接受，因此，很多新人在婚礼上既行宣誓礼，也行跪拜礼，中西结合。
+                </p><br/>
+        		<footer>
+                	
+                </footer>
+        	</article>
+            <hr/>
+        	<article>
+        		<header>
+        			<h3>工笔画婚纱</h3>
+        			<time datetime="2020-03-25"></time>
+        		</header>
+                <br/>
+        		<p style="text-indent:26px">
+              工笔画婚纱照和全家福是中式婚纱照中最流行的款式之一了，很多明星都会在结婚之前拍摄一套工笔画式的婚纱照。工笔画婚纱照是将中国的传统风格与婚纱摄影完美的融合起来，整体给人一种水墨画般的感受，整个感觉会很静谧，给人一种十分温婉和温柔的感觉，仿佛将江南水乡镌刻在了婚纱照中一般，既干净又唯美。
+				
+                </p><br/>	<br/><p style="text-indent:26px">
+        	工笔画系列婚纱照, </p>
+<p style="text-indent:26px">我们用影像触碰心灵</p>
+<p style="text-indent:26px">感受幸福的温度 </p>
+<p style="text-indent:26px">轻柔妙曼 古典风韵 </p>
+
+
+				<p style="text-indent:26px">寥寥几笔，浅浅勾画</p>
+<p style="text-indent:26px">岁月就这么偷偷的溜走了</p>
+<p style="text-indent:26px">幸而良人互伴身旁 </p>
+<p style="text-indent:26px">南风知我意，吹梦到西洲 </p><br/>
+<p style="text-indent:26px">当婚纱照遇上工笔画</p>
+<p style="text-indent:26px">雕琢细腻无声的美</p><br/>
+<p style="text-indent:26px">你若赐我一段浮华</p>
+<p style="text-indent:26px">我便许你满世繁花</p><br/>
+				<p style="text-indent:26px">情愫涌动 琴瑟在御</p>
+<p style="text-indent:26px">无论岁月如何慌张</p>
+<p style="text-indent:26px">也要记得这样静好的模样</p> 
+
+
+                <br/>
+        	
+        	</article>
+			<article>
+        		<header>
+        			<h3>红色革命风</h3>
+        		</header>
+                <br/>
+        		<p style="text-indent:26px">
+       	谁说婚纱照只能唯美漂亮，幽默搞怪也是可以同时兼备的！中国风不仅仅只有传统底蕴才能表达出来，来一套搞怪好玩的红色革命风婚纱照也是不错的选择！婚姻也像一场革命，只有坚定信心，无所畏惧的勇往直前才能够取得革命的胜利，生活才会幸福美满，拥有必胜的决心才能够打赢婚姻这场胜仗！
+                </p><br/>  <br/>
+        		<p style="text-indent:26px">
+十一月初，北京什刹海，新婚夫妇在垂柳下穿着改革开放前青年中流行的“六五式”四兜儿干部军装拍摄新婚照片。改革开放之前，在几亿中国人的衣柜里，绿、蓝、黑、灰等几种颜色的衣服占据了绝对的“统治地位”。
+				
+                </p><br/>
+	</article>
+        		<footer>
+                	
+                </footer>
+        	</article>
+            <hr/>
+		<article>
+        		<header>
+        			<h3>红色革命风</h3>
+        		</header>
+                <br/>
+        		<p style="text-indent:26px">
+ 不穿婚纱穿军装，扛着老步枪拍结婚照寻找红色记忆；在幼儿园、校园拍结婚照，重温青梅竹马的温馨；去果园菜地拍农民装结婚照，寻找夫唱妇随的劳动感觉……这些结婚照的拍法你听说过吗？这是今年入秋以来长沙结婚照摄影的新玩法
+                </p><br/> 
+	</article>
+	
+      </main>
+    
+    <footer class="page-footer">
+    	@2020 婚纱 
+    </footer>
+</div>
+</body>
+</html>
